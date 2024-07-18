@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background:  #75ccff;
+    background: #75ccff;
     min-height: 100vh;
 }
 
@@ -130,5 +130,15 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* Custom background for columns */
+/*.custom-bg-left {
+    background-color: rgba(224, 247, 250, 0.8);
+}
 
-/*custom background for columns*/
+.custom-bg-middle {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.custom-bg-right {
+    background-color: rgba(224, 247, 250, 0.8);
+}
