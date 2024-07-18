@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:  #75ccff;
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+li a:hover {
+    color: #0056b3;
+}
+
+.sponsor-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sponsor-link img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-link:hover img {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.news-story h3, .news-story h4, .news-story h5, .news-story p {
+    margin: 0 0 15px 0;
+}
+
+.read-more {
+    background: none;
+    border: none;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+
+.left-sidebar,
+.right-sidebar {
+    height: 100%;
+    overflow-y: auto;
+}
+
+textarea,
+input {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#charCount {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 3px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.post-button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add this to make the middle column transparent */
+.main-content {
+    background-color: rgba(255, 255, 255, 0.5);
+}

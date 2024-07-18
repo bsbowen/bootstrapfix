@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wassup</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Main container of body -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center py-4">
+                <img src="logo3.png" alt="Wassup Logo" class="float-left mb-4" />
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Left sidebar for links to other pages and sponsor ads -->
+            <div class="col-12 col-md-3 mb-4">
+                <div class="left-sidebar p-3 bg-white rounded">
+                    <h2>Picked Just for You</h2>
+                    <hr />
+                    <ul>
+                        <li><a href="https://espn.com" target="_blank">ESPN</a></li>
+                        <li><a href="https://mlb.com" target="_blank">MLB</a></li>
+                        <li><a href="https://foxsports.com" target="_blank">FOX SPORTS</a></li>
+                        <li><a href="https://ballysports.com" target="_blank">BALLY SPORTS</a></li>
+                        <li><a href="https://bleacherreport.com" target="_blank">BLEACHER REPORT</a></li>
+                        <li><a href="https://nbcsports.com" target="_blank">NBC SPORTS</a></li>
+                    </ul>
+                    <hr>
+                    <a href="https://dickssportinggoods.com" target="_blank" class="sponsor-link">
+                        <img src="dicks.png" alt="Dick's curbside and In-Store Pickup Coupon" class="img-fluid img-thumbnail" />
+                    </a>
+                    <a href="https://playitagainsports.com" target="_blank" class="sponsor-link">
+                        <img src="playitagain.png" alt="Play It Again Sports" class="img-fluid img-thumbnail" />
+                    </a>
+                    <a href="https://academy.com" target="_blank" class="sponsor-link">
+                        <img src="academy.png" alt="Academy Sports 10% Off First Purchase Coupon" class="img-fluid img-thumbnail" />
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Main content area -->
+            <div class="col-12 col-md-6 mb-4">
+                <div class="main-content bg-white p-3 rounded">
+                    <form id="postForm">
+                        <textarea id="postContent" class="form-control" placeholder="What's on your Mind?" maxlength="280" required></textarea>
+                        <div id="charCount" class="mt-2">0/280</div>
+                        <input type="text" id="postAuthor" class="form-control mt-2" placeholder="Author" required>
+                        <input type="text" id="postTags" class="form-control mt-2" placeholder="Tags (comma separated)">
+                        <input type="file" id="imageInput" class="form-control-file mt-2" accept="image/*">
+                        <button type="submit" class="btn btn-primary mt-2">Post</button>
+                    </form>
+                    <input type="text" id="search" class="form-control mt-4" placeholder="Search by keyword">
+                    <div id="feed" class="mt-4"></div>
+                </div>
+            </div>
+            
+            <!-- Right sidebar for news feed stories -->
+            <div class="col-12 col-md-3 mb-4">
+                <div class="right-sidebar p-3 bg-white rounded">
+                    <h2>News Feed</h2>
+                    <hr />
+                    <div class="news-story">
+                        <h3>Seabright Daily News</h3>
+                        <h4>July 16, 2024</h4>
+                        <h5><i>Local Man Arrested for Fish Heist at Seabright Groceries</i></h5>
+                        <p>
+                            <b>Seabright, NC</b> – In a bizarre incident that left the residents of
+                            Seabright both amused and astonished, local man Fisher Fletemeyer
+                            was arrested
+                            <span class="more-text" style="display: none">yesterday afternoon for attempting to steal the entire stock of fish from Seabright Groceries...</span>
+                            <button class="read-more" onclick="toggleReadMore(this)">Read more</button>
+                            <hr />
+                        </p>
+                    </div>
+                    <!-- Add more news stories here in the same format as above -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
